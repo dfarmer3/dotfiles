@@ -15,3 +15,7 @@ For the uninitiated, Firefox allows the use of custom CSS files to alter basic f
 # Sample Images
 
 ![ ](https://github.com/dfarmer3/dotfiles/blob/master/images/Screenshot_20200204_225105.png)
+
+![ ](https://github.com/dfarmer3/dotfiles/blob/master/images/Screenshot_20200204_225457.png)
+
+![ ](https://github.com/dfarmer3/dotfiles/blob/master/images/Screenshot_20200204_225636.png)
