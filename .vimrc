@@ -1,30 +1,6 @@
 set nocompatible              " required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim' "Vim Package Manager
-"Plugin 'tmhedberg/SimpylFold' "No-BS Python code folding for Vim 
-"Plugin 'vim-scripts/indentpython.vim' "Auto-indent for Python
-" Bundle 'Valloric/YouCompleteMe' "code autocomplete (figure out later)
-"Plugin 'vim-syntastic/syntastic' "Checks python syntax upon each save
-
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
-
-" ...
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages.
@@ -91,17 +67,6 @@ command W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
 "set expandtab
-
-" Be smart when using tabs ;)
-"set smarttab
-
-" 1 tab == 4 spaces
-"set shiftwidth=4
-"set tabstop=4
-
-" Linebreak on 500 characters
-"set lbr
-"set tw=500
 
 set ai "Auto indent
 set si "Smart indent
