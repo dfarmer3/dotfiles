@@ -1,7 +1,7 @@
 # dotfiles
 Dotfiles for Dennis Farmer
 
-These are my configuration files for some of the stuff I use on my totally noob Linux rice (I use Arch btw XD). I currently have them uploaded with zero organizational effort involved because I haven't actually learned how to use Git (commit, branch, etc), but I'll figure it out eventually. I'm not sure if it's possible to recreate my rice with dotfiles alone (either that or I just can't find the right ones), but most of the necessary files are available to compare to the preview pics below if you want to recreate my setup (not sure why you would want to anyways hahaha)
+These are my configuration files for some of the stuff I use on my totally noob Linux rice (I use Arch btw XD). I currently have them uploaded with zero organizational effort involved because I haven't actually learned how to use Git (commit, branch, etc), but I'll figure it out eventually. I'm not sure if it's possible to recreate my rice with dotfiles alone (either that or I just can't find the right ones), but most of the necessary files are available to compare to the preview pics below if you want to recreate my setup (not sure why you would want to anyways)
 
 # Setup Summary
 My current setup consists of a frankenstein between KDE Desktop Manager and i3-Gaps Window Manager. Latte-Dock serves as a copy of the MacOS application tray (convenient for multitasking), and dmenu/rofi is used to quickly search through files and apps. 
