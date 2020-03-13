@@ -12,6 +12,18 @@ By using both KDE and i3, I am able to have a universal menu at the top of my sc
 # userChrome.css
 For the uninitiated, Firefox allows the use of custom CSS files to alter basic functionality of the web browser. You can view the comments I added in the file, but basically I made full screen mode more functional when using my Thinkpad (I can use my middle button to close tabs rather than clicking X's). Google will basically solve any question you have, which is how I learned the majority of this stuff anyways (LukeSmith.xyz is basically Jesus though, check him out)
 
+## How to setup:
+
+### 1. Enable custom CSS
+- Enter `about:config` in your Firefox address bar
+- Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
+- Set the option to `True`
+### 2. Create userChrome.css file
+- Enter `about:support` in your Firefox address bar
+- In the first table (Application Basics), click on "Open Directory" to open your user directory
+- Create a folder called `chrome` in this directory
+- In the `chrome` folder, create a new file called `userChrome.css`
+
 # Sample Images
 
 ![ ](https://github.com/dfarmer3/dotfiles/blob/master/images/Screenshot_20200204_225105.png)
