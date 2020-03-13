@@ -10,19 +10,19 @@ My current setup consists of a frankenstein between KDE Desktop Manager and i3-G
 By using both KDE and i3, I am able to have a universal menu at the top of my screen (File, Edit, View, etc) plus easy settings menus (printer, bluetooth, general settings, wifi setup) while also endulging in the luxury of a tiling window manager. Having automatic window resizing and multi-desktop functionality without the need to click and drag on stuff has made my workflow satisfying to use for both non-CS homework (pdfs with zathura and MS Office stuff with LibreOffice) and programming projects (vim and vscode).
 
 # userChrome.css
-For the uninitiated, Firefox allows the use of custom CSS files to alter basic functionality of the web browser. You can view the comments I added in the file, but basically I made full screen mode more functional when using my Thinkpad (I can use my middle button to close tabs rather than clicking X's). Google will basically solve any question you have, which is how I learned the majority of this stuff anyways (LukeSmith.xyz is basically Jesus though, check him out)
+For the uninitiated, Firefox allows the use of custom CSS files to alter the appearance of the web browser. You can view the comments I added in the file, but basically I made full screen mode more functional when using my Thinkpad, since by default Firefox has the bookmarks row hidden when in fullscreen.
 
 ## How to setup:
 
 ### 1. Enable custom CSS
 - Enter `about:config` in your Firefox address bar
 - Search for `toolkit.legacyUserProfileCustomizations.stylesheets`
-- Set the option to `True`
+- Set this option to `True`
 ### 2. Create userChrome.css file
 - Enter `about:support` in your Firefox address bar
 - In the first table (Application Basics), click on "Open Directory" to open your user directory
 - Create a folder called `chrome` in this directory
-- In the `chrome` folder, create a new file called `userChrome.css`
+- In the new `chrome` folder, create a new file called `userChrome.css`
 
 # Sample Images
 
