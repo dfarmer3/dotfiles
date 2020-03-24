@@ -1,6 +1,6 @@
 # My Dotfiles (System Configuration)
 
-These are my configuration files for some of the stuff I use on my Arch Linux rice (Did I mention I use Arch btw? I'm drowning in women right now if you couldn't already tell), organized in the same folder hierarchy that exists on my system. Later on I'll write a bash or python script that installs everything automatically, but for now rebuilding my setup will consist solely of lots of copy and pasting (super fun!).
+These are my configuration files for some of the stuff I use on my Arch Linux rice (Did I mention I use Arch btw?), organized in the same folder hierarchy that exists on my system. Later on I'll write a bash or python script that installs everything automatically, but for now rebuilding my setup will consist solely of lots of copy and pasting (super fun!).
 
 ### Setup Summary
 My current setup consists of a frankenstein between KDE Desktop Manager and i3-Gaps Window Manager. I currently am using KDE's default taskbar for my statusbar needs (until I find a good polybar config), and dmenu/rofi is used to quickly search through my files and apps. 
@@ -12,7 +12,7 @@ I'm using KDE as desktop manager because <strike>linuwux is haard </strike> I li
 `packages.txt` contains *most* of the required packages for my setup, minus various AUR packages and independently installed applications like anaconda.
 
 ### Python Anaconda Trick
-To avoid the $PS1 from being changed by Anaconda (appended "(base)"), run this line in the terminal: 
+To avoid the prompt string from being changed by Anaconda, run the following after installation:
 
 `conda config --set changeps1 False`
 
