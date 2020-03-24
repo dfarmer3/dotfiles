@@ -6,28 +6,15 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls -a --color=auto'
-alias ..='cd..'
 
 
-alias sshtoshi='ssh dfarmer@anton-toshicent'
-
-
-alias bashconfig='vim ~/.bashrc'
-alias vimconfig='vim ~/.vimrc'
-alias powertop='sudo powertop'
-alias notes='vim ~/Documents/Notes'
-
-
-
-
-
+alias bashrc='vim ~/.bashrc'
+alias vimrc='vim ~/.vimrc'
 
 
 
 #PS1='[\u@\h \W]\$ '
-export PS1="[\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]\$ "
-#export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-
+PS1="[\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]]\$ "
 
 #linux ~~ xterm-256color
 if [ "$TERM" = "linux" ]; then
@@ -53,4 +40,21 @@ fi
 export CLICOLOR='1'
 export LSCOLORS='ExFxBxDxCxegedabagacad'
 
+
+### Python Anaconda: 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/dfarmer/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/dfarmer/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/dfarmer/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/dfarmer/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
