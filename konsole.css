@@ -1,0 +1,34 @@
+QTabBar::tab {
+    color: #FFFFFF;
+    background: #808080;
+    
+}
+
+QTabBar::tab:hover {
+    text-decoration: underline;
+}
+
+QTabBar::tab::selected {
+    background: #00007c;
+}
+
+/* List of selectors and properties for reference:
+/*
+* min-width
+* font-family
+* font-size
+* height
+* padding
+* border
+* border-bottom
+* color
+* background
+*/
+
+/*
+* QWidget
+* QTabWidget::pane
+* QTabBar::tab
+* QTabBar::tab::selected
+* QTabBar::tab:hover
+*/
