@@ -1,0 +1,48 @@
+UNIT                                         LOAD   ACTIVE SUB     DESCRIPTION                                            
+abrt-journal-core.service                    loaded active running Creates ABRT problems from coredumpctl messages        
+abrt-oops.service                            loaded active running ABRT kernel log watcher                                
+abrt-xorg.service                            loaded active running ABRT Xorg log watcher                                  
+abrtd.service                                loaded active running ABRT Automated Bug Reporting Tool                      
+accounts-daemon.service                      loaded active running Accounts Service                                       
+alsa-state.service                           loaded active running Manage Sound Card State (restore and store)            
+atd.service                                  loaded active running Deferred execution scheduler                           
+auditd.service                               loaded active running Security Auditing Service                              
+avahi-daemon.service                         loaded active running Avahi mDNS/DNS-SD Stack                                
+bluetooth.service                            loaded active running Bluetooth service                                      
+chronyd.service                              loaded active running NTP client/server                                      
+colord.service                               loaded active running Manage, Install and Generate Color Profiles            
+crond.service                                loaded active running Command Scheduler                                      
+cups.service                                 loaded active running CUPS Scheduler                                         
+dbus-:1.2-org.freedesktop.problems@0.service loaded active running dbus-:1.2-org.freedesktop.problems@0.service           
+dbus-broker.service                          loaded active running D-Bus System Message Bus                               
+dnfdaemon.service                            loaded active running Package management dnf daemon                          
+firewalld.service                            loaded active running firewalld - dynamic firewall daemon                    
+gssproxy.service                             loaded active running GSSAPI Proxy Daemon                                    
+httpd.service                                loaded active running The Apache HTTP Server                                 
+irqbalance.service                           loaded active running irqbalance daemon                                      
+lightdm.service                              loaded active running Light Display Manager                                  
+mcelog.service                               loaded active running Machine Check Exception Logging Daemon                 
+ModemManager.service                         loaded active running Modem Manager                                          
+multipathd.service                           loaded active running Device-Mapper Multipath Device Controller              
+NetworkManager.service                       loaded active running Network Manager                                        
+pcscd.service                                loaded active running PC/SC Smart Card Daemon                                
+polkit.service                               loaded active running Authorization Manager                                  
+postgresql-12.service                        loaded active running PostgreSQL 12 database server                          
+rngd.service                                 loaded active running Hardware RNG Entropy Gatherer Daemon                   
+rsyslog.service                              loaded active running System Logging Service                                 
+rtkit-daemon.service                         loaded active running RealtimeKit Scheduling Policy Service                  
+smartd.service                               loaded active running Self Monitoring and Reporting Technology (SMART) Daemon
+sssd.service                                 loaded active running System Security Services Daemon                        
+systemd-journald.service                     loaded active running Journal Service                                        
+systemd-logind.service                       loaded active running Login Service                                          
+systemd-udevd.service                        loaded active running udev Kernel Device Manager                             
+udisks2.service                              loaded active running Disk Manager                                           
+upower.service                               loaded active running Daemon for power management                            
+user@1000.service                            loaded active running User Manager for UID 1000                              
+wpa_supplicant.service                       loaded active running WPA supplicant                                         
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+41 loaded units listed.

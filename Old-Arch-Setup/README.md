@@ -42,8 +42,8 @@ Even if you're operating on a non-superior Mac-OS or Windows operating system, y
 
 ### Sample Images:
 
-![ ](https://github.com/dfarmer3/dotfiles/blob/master/PreviewImages/Preview1.png)
+![Preview1](Images/Preview1.png)
 
-![ ](https://github.com/dfarmer3/dotfiles/blob/master/PreviewImages/Preview2.png)
+![Preview2](Images/Preview2.png)
 
-![ ](https://github.com/dfarmer3/dotfiles/blob/master/PreviewImages/Preview3.png)
+![Preview3](Images/Preview3.png)

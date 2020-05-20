@@ -1,2 +1,7 @@
 alias ls="ls -a --color"
 alias cdwin="cd /mnt/c/Users/Dennis"
+alias dsj="jupyter notebook"
+alias dss="spyder"
+alias dsa="anaconda-navigator"
+alias dsl="jupyter lab"
+alias ods="onedrive --synchronize"
