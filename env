@@ -1,0 +1,17 @@
+#!/bin/sh
+
+
+# Programs
+export EDITOR="gvim -v"
+export PDFVIEWER="okular"
+
+# Directories
+export SCRIPTS="$HOME/github/scripts"
+
+# Config Redirection
+export VIMINIT="source $HOME/.vim/vimrc"
+
+# Paths
+export ZSHRC="$HOME/.config/zsh/.zshrc"
+export VIMRC="$HOME/.vim/vimrc"
+export TMUXRC="$HOME/.config/tmux/tmuxrc"

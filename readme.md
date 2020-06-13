@@ -44,6 +44,20 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 # Install Guides
 
+- **Install Vundle**
+
+    ```
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall OR launch vim and run :PluginInstall
+    ```
+    `:PluginList`       - lists configured plugins
+
+    `:PluginInstall`    - installs plugins; append `!` to update or just :PluginUpdate
+
+    `:PluginSearch foo` - searches for foo; append `!` to refresh local cache
+
+    `:PluginClean`      - confirms removal of unused plugins; append `!` to auto-approve removal
+
 - **Install ohmyzsh**
 
     ```
@@ -54,6 +68,30 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     ```
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \ 
     ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    ```
+
+- **Install Powerline**
+
+    ```
+    pip install powerline-status
+    pip show powerline-status
+        "Location: /home/dennisfarmer/anaconda3/lib/python3.7/site-packages"
+    
+
+    ```
+
+- **Install Fonts**
+
+    ```
+    cd ~/.local/share/fonts
+    sudo mkfontscale && mkfontdir
+    xset +fp ~/.local/share/fonts   #(xset q to list fontpaths)
+    
+    #(copy fonts to ~/.local/share/fonts)
+    wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf ~/.local/share/fonts/
+    wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf /etc/fonts/conf.d/
+    fc-cache -f ~/.local/share/fonts
+
     ```
 
 - **Enable Beefy Miracle Boot Theme**

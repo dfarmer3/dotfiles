@@ -1,0 +1,21 @@
+[Desktop Entry]
+DefaultProfile=dfarmer.profile
+
+[Favorite Profiles]
+Favorites=dfarmer.profile
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+SaveGeometryOnExit=false
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABNMAAAVmAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+
+[TabBar]
+CloseTabButton=None
+CloseTabOnMiddleMouseButton=true
+ExpandTabWidth=true
+TabBarUseUserStyleSheet=true
+TabBarUserStyleSheetFile=file:///home/dennisfarmer/github/dotfiles/konsole.css

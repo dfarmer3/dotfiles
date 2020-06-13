@@ -1,0 +1,20 @@
+{
+"zshrc": "$HOME/.config/zsh/.zshrc",
+"zshenv": "$HOME/.zshenv",
+"vimrc": "$HOME/.vim/vimrc",
+"tmuxrc": "$HOME/.config/tmux/tmuxrc",
+"condarc": "$HOME/.condarc",
+"konsolerc": "$HOME/.config/konsolerc",
+
+"cpp_auto_build.py": "$HOME/.config/autokey/data/My*Phrases/CPP*Auto*Build.py",
+"cpp_auto_build.json": "$HOME/.config/autokey/data/My*Phrases/.CPP*Auto*Build.json",
+"inputrc": "/etc/inputrc",
+"Xmodmap": "$HOME/.Xmodmap",
+
+"userChrome.css": "$HOME/.mozilla/firefox/bg1kmeem.default-release/chrome/userChrome.css",
+"firefox_profiles.ini": "$HOME/.mozilla/firefox/profiles.ini",
+"firefox_installs.ini": "$HOME/.mozilla/firefox/installs.ini",
+
+"Fonts": "$HOME/.local/share/fonts",
+"Powerline": "$HOME/.config/powerline"
+}
