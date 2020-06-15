@@ -4,17 +4,21 @@
 "vimrc": "$HOME/.vim/vimrc",
 "tmuxrc": "$HOME/.config/tmux/tmuxrc",
 "condarc": "$HOME/.condarc",
-"konsolerc": "$HOME/.config/konsolerc",
+
+"konsole/konsolerc": "$HOME/.config/konsolerc",
+"konsole/profile":"$HOME/.local/share/konsole/dfarmer.profile",
+"colorschemes/konsole/Gruvbox_dark.colorscheme":"$HOME/.local/share/konsole/Gruvbox_dark.colorscheme",
+"colorschemes/konsole/Gruvbox_light.colorscheme":"$HOME/.local/share/konsole/Gruvbox_light.colorscheme",
 
 "cpp_auto_build.py": "$HOME/.config/autokey/data/My*Phrases/CPP*Auto*Build.py",
 "cpp_auto_build.json": "$HOME/.config/autokey/data/My*Phrases/.CPP*Auto*Build.json",
 "inputrc": "/etc/inputrc",
 "Xmodmap": "$HOME/.Xmodmap",
 
-"userChrome.css": "$HOME/.mozilla/firefox/bg1kmeem.default-release/chrome/userChrome.css",
-"firefox_profiles.ini": "$HOME/.mozilla/firefox/profiles.ini",
-"firefox_installs.ini": "$HOME/.mozilla/firefox/installs.ini",
+"firefox/userChrome.css": "$HOME/.mozilla/firefox/bg1kmeem.default-release/chrome/userChrome.css",
+"firefox/firefox_profiles.ini": "$HOME/.mozilla/firefox/profiles.ini",
+"firefox/firefox_installs.ini": "$HOME/.mozilla/firefox/installs.ini",
 
-"Fonts": "$HOME/.local/share/fonts",
-"Powerline": "$HOME/.config/powerline"
+"fonts": "$HOME/.local/share/fonts",
+"powerline": "$HOME/.config/powerline"
 }

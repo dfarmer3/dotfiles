@@ -1,16 +1,21 @@
 [Desktop Entry]
 DefaultProfile=dfarmer.profile
 
+[DownloadDialog Settings]
+Height 1440=526
+Width 2560=700
+
 [Favorite Profiles]
 Favorites=dfarmer.profile
 
 [KonsoleWindow]
 AllowMenuAccelerators=true
 SaveGeometryOnExit=false
+ShowMenuBarByDefault=false
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABNMAAAVmAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAA4AAAAIPAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 
 [TabBar]
@@ -18,4 +23,4 @@ CloseTabButton=None
 CloseTabOnMiddleMouseButton=true
 ExpandTabWidth=true
 TabBarUseUserStyleSheet=true
-TabBarUserStyleSheetFile=file:///home/dennisfarmer/github/dotfiles/konsole.css
+TabBarUserStyleSheetFile=file:///home/dennisfarmer/github/dotfiles/konsole/konsole.css

@@ -11,8 +11,9 @@ bind Space send-prefix
 unbind '"'
 unbind %
 # bind | split-window -h
-bind \ split-window -h
-bind - split-window -v
+bind \ split-window -h -c '#{pane_current_path}'
+bind - split-window -v -c '#{pane_current_path}'
+
 
 # Mouse mode
 set -g mouse on

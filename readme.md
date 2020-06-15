@@ -70,6 +70,11 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     ```
 
+- **Install zsh-autosuggestions**
+    ```
+    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    ```
+
 - **Install Powerline**
 
     ```
@@ -169,8 +174,8 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     
 # Sample Images:
 
-![Preview1](Images/Preview1.png)
+![Preview1](images/Preview1.png)
 
-![Preview2](Images/Preview2.png)
+![Preview2](images/Preview2.png)
 
-![Preview3](Images/Preview3.png)
+![Preview3](images/Preview3.png)
