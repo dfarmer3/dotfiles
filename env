@@ -1,8 +1,10 @@
 #!/bin/sh
 
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # Programs
 export EDITOR="gvim -v"
+export VISUAL="gvim -v"
 export PDFVIEWER="okular"
 
 # Directories
@@ -10,8 +12,15 @@ export SCRIPTS="$HOME/github/scripts"
 
 # Config Redirection
 export VIMINIT="source $HOME/.vim/vimrc"
+export LESSHISTFILE="$HOME/.history/.lesshst"
+export PSQL_HISTORY="$HOME/.history/.psql_history"
+
+
 
 # Paths
-export ZSHRC="$HOME/.config/zsh/.zshrc"
+export ZSHRC="$XDG_CONFIG_HOME/zsh/.zshrc"
 export VIMRC="$HOME/.vim/vimrc"
-export TMUXRC="$HOME/.config/tmux/tmuxrc"
+export TMUXRC="$XDG_CONFIG_HOME/tmux/tmuxrc"
+export PGSYSCONFDIR="$HOME/anaconda3/etc/postgres"
+export PSQLRC="$PGSYSCONFDIR/psqlrc"
+#export $CONDARC="$HOME/.condarc"

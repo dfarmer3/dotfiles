@@ -4,6 +4,9 @@
 "vimrc": "$HOME/.vim/vimrc",
 "tmuxrc": "$HOME/.config/tmux/tmuxrc",
 "condarc": "$HOME/.condarc",
+"psqlrc": "$PGSYSCONFDIR/psqlrc",
+"gitconfig": "$XDG_CONFIG_HOME/.gitconfig",
+"neofetch.conf":"$XDG_CONFIG_HOME/neofetch/config.conf",
 
 "konsole/konsolerc": "$HOME/.config/konsolerc",
 "konsole/profile":"$HOME/.local/share/konsole/dfarmer.profile",

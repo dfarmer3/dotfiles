@@ -72,7 +72,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 - **Install zsh-autosuggestions**
     ```
-    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
 
 - **Install Powerline**
@@ -101,7 +101,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 - **Enable Beefy Miracle Boot Theme**
     
-    ![ ](Images/plymouth-hotdog.png)
+    ![ ](images/plymouth-hotdog.png)
 
 
     ```
@@ -174,8 +174,8 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     
 # Sample Images:
 
-![Preview1](images/Preview1.png)
+![Preview4](images/Preview4.png)
 
-![Preview2](images/Preview2.png)
+![Preview5](images/Preview5.png)
 
-![Preview3](images/Preview3.png)
+![Preview6](images/Preview6.png)
