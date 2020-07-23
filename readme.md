@@ -2,6 +2,14 @@
 <hr>
 These are configuration files for my different linux enviroments. Old-Arch-Setup contains a KDE+i3wm setup that I used to use before switching to my current XFCE with Chicago95 setup.
 
+
+![Preview4](images/Preview4.png)
+
+![Preview5](images/Preview5.png)
+
+![Preview6](images/Preview6.png)
+
+
 # Setup Summary
 I'll write this later, no one's going to read this anyways, its just for my organization
 
@@ -170,12 +178,3 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     ```
     git commit --allow-empty -m "Trigger rebuild"
     ```
-
-    
-# Sample Images:
-
-![Preview4](images/Preview4.png)
-
-![Preview5](images/Preview5.png)
-
-![Preview6](images/Preview6.png)
