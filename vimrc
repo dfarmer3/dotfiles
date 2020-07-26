@@ -17,6 +17,10 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'preservim/nerdcommenter'
+" Plugin 'tpope/vim-fugitive'
+
+" Writing
+Plugin 'junegunn/goyo.vim'
 
 " Vim-airline
 " Plugin 'vim-airline/vim-airline'
@@ -25,6 +29,7 @@ Plugin 'preservim/nerdcommenter'
 
 " Color schemes
 Plugin 'morhetz/gruvbox'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
@@ -41,12 +46,17 @@ set noswapfile
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
 set undodir=~/.vim/undo//
-set nohlsearch
+set history=1000
+set autoread
 set mouse=a
+set scrolloff=16
 set cursorline
+set wrap linebreak
 set background=dark
 colorscheme gruvbox
-" colorscheme solarized8_dark_low
+"let g:solarized_termtrans = 1
+"let g:solarized_termcolors=256
+"colorscheme solarized
 
 " -----------------------------------------------
 " Powerline
@@ -64,6 +74,21 @@ nnoremap <CR> :noh<CR><CR>
 let mapleader="\<Space>"
 
 " -----------------------------------------------
+" Tabs
+
+set autoindent
+set tabstop=4
+set softtabstop=4
+
+" indentation
+set shiftwidth=4
+set shiftround
+
+" ctrl+v <tab> to insert actual \t character
+set smarttab
+set expandtab
+
+" -----------------------------------------------
 " Clipboard
 
 set clipboard+=unnamed
@@ -79,10 +104,72 @@ if executable("xclip")
 endif
 
 " -----------------------------------------------
+"  Goyo
+
+" ENTER GOYO
+function! s:goyo_enter()
+  if executable('tmux') && strlen($TMUX)
+    silent !tmux set status off
+    silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
+  endif
+  set noshowmode
+  set noshowcmd
+  set scrolloff=999
+  let b:quitting = 0
+  let b:quitting_bang = 0
+  autocmd QuitPre <buffer> let b:quitting = 1
+  cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q! 
+endfunction
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+
+" EXIT GOYO
+function! s:goyo_leave()
+  if executable('tmux') && strlen($TMUX)
+    silent !tmux set status on
+    silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
+  endif
+  set showmode
+  set showcmd
+  set scrolloff=16
+  if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+	  if b:quitting_bang
+		  qa!
+	  else
+		  qa
+	  endif
+  endif 
+endfunction
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+" Map movement keys for wrapped lines
+noremap <silent> k gk
+noremap <silent> j gj
+onoremap <silent> j j
+onoremap <silent> k k
+
+" Toggle Goyo
+" autocmd FileType markdown,text,latex,plaintex 
+nnoremap <buffer> <Leader>g :Goyo<CR>
+
+"<bar>set cursorline!
+
+let g:goyo_width = 106
+" g:goyo_height 85
+" g:goyo_linenr 0
+" g:goyo_margin_top 4
+" g:goyo_margin_bottom 4
+
+" -----------------------------------------------
 " LaTeX
 
 " Auto-compile
-autocmd FileType tex,latex,plaintex nnoremap <buffer> <Leader>p :w <bar> !$SCRIPTS/latex_autocompile_vim/latex_script.sh % & disown <CR><CR>
+autocmd FileType latex,plaintex nnoremap <buffer> <Leader>p :w <bar> !$SCRIPTS/latex_autocompile_vim/latex_script.sh % & disown <CR><CR>
+
+" -----------------------------------------------
+" Bash
+
+autocmd FileType bash,sh nnoremap <buffer> <leader>l :w <bar> !sh % 
+autocmd FileType bash,sh nnoremap <buffer> <leader>p :w <bar> !sh % <CR>
 
 " -----------------------------------------------
 " Python
@@ -102,6 +189,6 @@ autocmd FileType python set breakindentopt=shift:4
 " -----------------------------------------------
 " Miscellaneous bindings
 
-command W w !sudo tee % > /dev/null 
+" command W w !sudo tee % > /dev/null 
 " :W sudo saves files
 map <C-n> :NERDTreeToggle<CR>

@@ -2,10 +2,33 @@
 
 # Work in progress ofc
 
+
+
+
+
+
 dnf install 
-cmake hplip-gui finger
+# programs
+firefox konsole kate
+# terminal programs
+vim tmux zsh neofetch
+# Miscellaneous
+autokey-gtk postgresql
+jq cmake hplip-gui 
 
 
+
+finger
+
+mkdir github
+cd github
+
+
+
+chsh -s $(which zsh)
+
+
+sudo echo "localhost.localdomain" > /etc/hostname
 
 xmodmap ~/.config/.Xmodmap
 autokey-gtk

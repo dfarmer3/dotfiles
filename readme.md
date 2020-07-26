@@ -52,6 +52,12 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 # Install Guides
 
+- **Install Anaconda**
+ 
+  Go to `https://www.anaconda.com/products/individual#linux`
+  Click 64-Bit (x86) Installer under "Linux"
+  Run: `bash ~/Downloads/Anaconda3 ... -Linux-x86_64.sh`
+
 - **Install Vundle**
 
     ```

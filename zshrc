@@ -33,20 +33,37 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 # Aliases
-alias ls="ls -a --color"
-alias mkdir="mkdir -p"
-alias cl="clear"
-alias cs="cd && clear"
-alias 'cd.'="cd .."
-alias 'cd..'="cd ../../"
+alias ls='ls --all --almost-all --color'
+alias mkdir='mkdir -p'
+alias cl='clear'
+alias 'cd.'='cd ..'
+alias 'cd..'='cd ../../'
+alias cs='f(){ cd "$1" && clear; if [ -z "$1" ]; then { cd; } else { ls; } fi; unset -f f; }; f'
+alias 'cs.'='cs .'
+alias wget='wget --no-hsts'
+alias mkdircd='f(){ mkdir -p "$1" && cd "$1"; unset -f f }; f'
 
-alias dsn="jupyter notebook"
-alias dss="spyder"
-alias dsa="anaconda-navigator"
-alias dsl="jupyter lab"
-alias ods="onedrive --synchronize"
-alias cdwin="cd /mnt/c/Users/Dennis"
-alias dsr="conda activate rstudio && rstudio"
+alias bashinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env bash\n|" "$1"; } else { echo "#!/usr/bin/env bash" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
+alias pyinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env python\n|" "$1"; } else { echo "#!/usr/bin/env python" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
+
+alias ods='onedrive --synchronize'
+alias cdwin='cd /mnt/c/Users/Dennis'
+
+#alias spotify="flatpak run com.spotify.Client"
+alias jsontool="python -m json.tool"
+
+alias dsa='anaconda-navigator'
+
+# conda activate [...] changes $HOST to "x86_64-conda_cos6-linux-gnu"
+# https://github.com/conda/conda/issues/7031
+# Conflicts with ZSH prompt, so reset with
+# HOST=$(hostname)
+
+alias R='R --no-save'
+alias r='conda activate rstudio; HOST=$(hostname); clear; R --no-save'
+alias renv='conda activate rstudio; HOST=$(hostname); clear;'
+alias rstudio='conda activate rstudio; HOST=$(hostname); rstudio'
+alias base='conda activate; HOST=$(hostname); clear'
 
 if type gvim > /dev/null 2>&1; then
     alias vim="gvim -v"
@@ -73,10 +90,45 @@ unset __conda_setup
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
+# Fix home key error
+
+typeset -A key
+key=(
+  BackSpace  "${terminfo[kbs]}"
+  Home       "${terminfo[khome]}"
+  End        "${terminfo[kend]}"
+  Insert     "${terminfo[kich1]}"
+  Delete     "${terminfo[kdch1]}"
+  Up         "${terminfo[kcuu1]}"
+  Down       "${terminfo[kcud1]}"
+  Left       "${terminfo[kcub1]}"
+  Right      "${terminfo[kcuf1]}"
+  PageUp     "${terminfo[kpp]}"
+  PageDown   "${terminfo[knp]}"
+)
+
+# Setup key accordingly
+[[ -n "${key[BackSpace]}" ]] && bindkey "${key[BackSpace]}" backward-delete-char
+[[ -n "${key[Home]}"      ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey "${key[End]}" end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey "${key[Insert]}" overwrite-mode
+[[ -n "${key[Delete]}"    ]] && bindkey "${key[Delete]}" delete-char
+[[ -n "${key[Up]}"        ]] && bindkey "${key[Up]}" up-line-or-beginning-search
+[[ -n "${key[Down]}"      ]] && bindkey "${key[Down]}" down-line-or-beginning-search
+[[ -n "${key[PageUp]}"    ]] && bindkey "${key[PageUp]}" beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey "${key[PageDown]}" end-of-buffer-or-history
+[[ -n "${key[Home]}"      ]] && bindkey -M vicmd "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
+
 # Launch TMUX
 export TMUXRC="$HOME/.config/tmux/tmuxrc"
 alias tmux="tmux -2 -f $TMUXRC"
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach 2>/dev/null || tmux new
+    tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
 fi
 
+# Run neofetch to flex on the normies
+
+neofetch
+
+# $player
