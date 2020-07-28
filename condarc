@@ -1,5 +1,6 @@
 changeps1: false
 ssl_verify: true
 channels:
+  - conda-forge
   - defaults
 default_python:

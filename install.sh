@@ -9,11 +9,14 @@
 
 dnf install 
 # programs
-firefox konsole kate
+firefox konsole kate gimp
 # terminal programs
 vim tmux zsh neofetch
 # Miscellaneous
 autokey-gtk postgresql
+
+#xfce specific:
+xfce4-panel-profiles
 jq cmake hplip-gui 
 
 
@@ -27,7 +30,7 @@ cd github
 
 chsh -s $(which zsh)
 
-
+conda install -c conda-forge pygobject #for chicago95 autoinstall
 sudo echo "localhost.localdomain" > /etc/hostname
 
 xmodmap ~/.config/.Xmodmap
