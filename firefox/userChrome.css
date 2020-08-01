@@ -25,5 +25,29 @@ display:none !important;
 #minimize-button, #restore-button, #close-button
 { display: none !important; }
 
+/* Remove tab list icon */
+#alltabs-button {
+  display: none !important;
+}
 
-/* /home/dfarmer3/.mozilla/firefox/c1ckncjz.default-release/chrome */
+/* Hide toolbar (ctrl-L, F6, fullscreen, hover to show) */
+#navigator-toolbox {
+    height: 10px !important;
+    min-height: 10px !important;
+    overflow: hidden !important;
+}
+
+#navigator-toolbox:hover,
+#navigator-toolbox:focus,
+#navigator-toolbox:focus-within,
+#navigator-toolbox:active,
+#navigator-toolbox[inFullscreen="true"] {
+    height: auto !important;
+}
+
+
+
+
+/* 
+ * /home/dennisfarmer/.mozilla/firefox/bg1kmeem.default-release/chrome
+ */
