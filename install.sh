@@ -3,12 +3,14 @@
 ### Install Programs
 
 sudo dnf install \
-firefox konsole kate gimp \ # programs
-vim tmux zsh neofetch onedrive \ # terminal programs
-nodejs jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
+firefox cheese konsole kate gimp \ # programs
+vim tmux zsh neofetch onedrive youtube-dl \ # terminal programs
+nodejs texlive ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
 xfce4-panel-profiles \ #xfce specific
 
 chsh -s $(which zsh)
+###
+youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=uWusmdmc0to
 
 ### Import Github scripts
 mkdir ~/github
