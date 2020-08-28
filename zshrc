@@ -50,6 +50,7 @@ alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
 
 #alias spotify="flatpak run com.spotify.Client"
+alias vish="vim ~/github/dotfiles/install.sh"
 alias jsontool="python -m json.tool"
 
 alias dsa='anaconda-navigator'

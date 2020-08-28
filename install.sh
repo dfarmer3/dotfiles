@@ -4,13 +4,18 @@
 
 sudo dnf install \
 firefox cheese konsole kate gimp \ # programs
-vim tmux zsh neofetch onedrive youtube-dl \ # terminal programs
-nodejs texlive ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
+vim tmux brasero zsh neofetch onedrive youtube-dl \ # terminal programs
+exfat-utils fuse-exfat unrar nodejs texlive texlive-isodate texlive-textpos ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
 xfce4-panel-profiles \ #xfce specific
-
+#xarchiver 
 chsh -s $(which zsh)
 ###
-youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=uWusmdmc0to
+#youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=uWusmdmc0to
+
+mkdir ~/.vim/backup
+mkdir ~/.vim/swap
+
+
 
 ### Import Github scripts
 mkdir ~/github
