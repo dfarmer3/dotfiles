@@ -13,7 +13,7 @@ bind Space send-prefix
 unbind '"'
 unbind %
 # bind | split-window -h
-bind \ split-window -h -c '#{pane_current_path}'
+bind \\ split-window -h -c '#{pane_current_path}'
 bind - split-window -v -c '#{pane_current_path}'
 
 
@@ -51,8 +51,12 @@ bind -n F2 previous-window
 
 
 new-session -d -s anaconda -n shell "zsh" 
-new-window -d -n c++ -c "$HOME/coursework/c++_primer" "zsh"
-new-window -d -n rstudio -c "$HOME/coursework/r" "zsh"
+new-window -d -n CPS-271 -c "/mnt/Samsung-USB/coursework/c++" "zsh"
+new-window -d -n CHN-111 -c "/mnt/Samsung-USB/coursework/chinese" "zsh"
+new-window -d -n MTH-192 -c "/mnt/Samsung-USB/coursework/calc" "zsh"
+new-window -d -n MTH-197 -c "/mnt/Samsung-USB/coursework/linear_algebra" "zsh"
+new-window -d -n MUS-140 -c "/mnt/Samsung-USB/coursework/music_theory" "zsh"
+
 
 # tmux.conf for the anaconda environment
 

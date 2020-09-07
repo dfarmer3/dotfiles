@@ -21,7 +21,8 @@ Plugin 'preservim/nerdcommenter'
 
 " Writing
 Plugin 'junegunn/goyo.vim'
-"Plugin 'lervag/vimtex'
+Plugin 'lervag/vimtex'
+Plugin 'sirver/ultisnips'
 
 " Vim-airline
 " Plugin 'vim-airline/vim-airline'
@@ -169,7 +170,30 @@ autocmd FileType markdown,md nnoremap <buffer> <Leader>s I<strike><esc>A</strike
 
 " Auto-compile
 autocmd FileType xtx,latex,tex,plaintex nnoremap <buffer> <Leader>p :w <bar> !$SCRIPTS/latex_autocompile_vim/latex_script.sh % & disown <CR>
-"let g:tex_flavor = 'latex'
+
+" Vimtex
+let g:tex_flavor='latex'
+"let g:vimtex_view_method='zathura'
+let g:vimtex_view_general_viewer = 'okular'
+let g:vimtex_view_general_options = '--unique file:@pdf/#src:@line@tex'
+let g:vimtex_view_general_options_latemk = '--unique'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+" UtilSnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+" UtilSnips Snippets
+"
+" (remove backslashes before quotes)
+"snippet beg \"begin{} / end{}\" bA
+"\begin{$1}
+    "$0
+"\end{$1}
+"endsnippet
 
 " -----------------------------------------------
 " Bash

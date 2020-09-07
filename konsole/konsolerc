@@ -6,7 +6,7 @@ Height 1440=526
 Width 2560=700
 
 [Favorite Profiles]
-Favorites=dfarmer.profile
+Favorites=
 
 [KonsoleWindow]
 AllowMenuAccelerators=true
@@ -15,7 +15,7 @@ ShowMenuBarByDefault=false
 
 [MainWindow]
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAApIAAALjAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAqEAAALDAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 
 [TabBar]
