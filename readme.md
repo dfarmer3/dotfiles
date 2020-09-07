@@ -19,7 +19,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 # Screensaver:
 
-- Drift
+- (xscreensaver) interaggregate
 
 
 <br>
@@ -98,9 +98,14 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     ```
     pip install powerline-status
     pip show powerline-status
-        "Location: /home/dennisfarmer/anaconda3/lib/python3.7/site-packages"
-    
+        "Location: /home/dennisfarmer/anaconda3/lib/python3.8/site-packages"
+   ``` 
 
+    Add the following to your `tmuxrc`:
+    
+    ```
+    # Powerline
+    source $HOME/anaconda3/lib/python3.8/site-packages/powerline/bindings/tmux/powerline.conf
     ```
 
 - **Install Fonts**
@@ -132,8 +137,37 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 <br>
 <hr>
     
-    
-    
+# Find Files
+
+```
+sudo updatedb
+locate [...]
+```    
+# Auto-Mount a Drive
+
+```
+sudo blkid
+```
+
+_Output:_
+
+```
+. . .
+/dev/sdb1: LABEL="Samsung USB" UUID="64A5-F009" BLOCK_SIZE="512" TYPE="exfat"
+. . .
+```
+
+```
+mkdir /mnt/sdb1
+sudo vim /etc/fstab
+```
+
+_Add following to _`/etc/fstab`_ (Tab-Seperated)_
+
+```
+UUID=64A5-F009  /mnt/sdb1  exfat  defaults  0  2
+```
+
 # SQL:
 
 - **Install Postgres Python Library**
@@ -188,3 +222,10 @@ I'll write this later, no one's going to read this anyways, its just for my orga
     ```
     git commit --allow-empty -m "Trigger rebuild"
     ```
+
+- **Anaconda hangs on "solving enviroment"**
+
+    ```
+    conda update conda 
+    ```
+
