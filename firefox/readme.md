@@ -19,5 +19,6 @@ Copy `installs.ini` and `profiles.ini` to your firefox directory (`$HOME/.mozill
 - github.com: 80%
 - webassign.net: 70%
 
-**x1c3:**
+**x1c3 (2560x1440):**
 
+- reddit.com: 170%
