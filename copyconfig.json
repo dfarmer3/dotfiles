@@ -1,14 +1,14 @@
 {
-"zshrc": "$HOME/.config/zsh/.zshrc",
+"zshrc": "$XDG_CONFIG_HOME/zsh/.zshrc",
 "zshenv": "$HOME/.zshenv",
 "vimrc": "$HOME/.vim/vimrc",
-"tmuxrc": "$HOME/.config/tmux/tmuxrc",
+"tmuxrc": "$XDG_CONFIG_HOME/tmux/tmuxrc",
 "condarc": "$HOME/.condarc",
 "psqlrc": "$PGSYSCONFDIR/psqlrc",
 "gitconfig": "$XDG_CONFIG_HOME/.gitconfig",
 "neofetch.conf":"$XDG_CONFIG_HOME/neofetch/config.conf",
 
-"konsole/konsolerc": "$HOME/.config/konsolerc",
+"konsole/konsolerc": "$XDG_CONFIG_HOME/konsolerc",
 "konsole/profile":"$HOME/.local/share/konsole/dfarmer.profile",
 "colorschemes/konsole/Gruvbox_dark.colorscheme":"$HOME/.local/share/konsole/Gruvbox_dark.colorscheme",
 "colorschemes/konsole/Gruvbox_light.colorscheme":"$HOME/.local/share/konsole/Gruvbox_light.colorscheme",

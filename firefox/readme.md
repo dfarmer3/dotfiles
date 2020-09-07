@@ -12,6 +12,12 @@ Copy `userChrome.css` to `chrome` folder
 
 Copy `installs.ini` and `profiles.ini` to your firefox directory (`$HOME/.mozilla/firefox`)
 
+Visit `about:config` from Firefox
+
+Search for "userprof"
+
+Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
+
 ### Website Zoom Levels:
 
 **x230 (1366x758):**

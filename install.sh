@@ -4,13 +4,18 @@
 
 sudo dnf install \
 firefox cheese konsole kate gimp \ # programs
-vim tmux zsh neofetch onedrive youtube-dl \ # terminal programs
-nodejs texlive ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
+vim tmux brasero zsh neofetch onedrive youtube-dl \ # terminal programs
+exfat-utils fuse-exfat unrar nodejs latexmk texlive texlive-isodate texlive-textpos ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
 xfce4-panel-profiles \ #xfce specific
-
+#xarchiver 
 chsh -s $(which zsh)
 ###
-youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=uWusmdmc0to
+#youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=uWusmdmc0to
+
+mkdir ~/.vim/backup
+mkdir ~/.vim/swap
+
+https://rpmfusion.org/Configuration/
 
 ### Import Github scripts
 mkdir ~/github
@@ -49,7 +54,8 @@ gem install jekyll bundler
 
 
 
-
+# Postgres
+conda install -c conda-forge postgresql
 
 
 conda install -c conda-forge pygobject #for chicago95 autoinstall
@@ -78,3 +84,8 @@ sudo echo "localhost.localdomain" > /etc/hostname
 # R Stuff
 #install.packages("remotes")
 #remotes::install_github("tallguyjenks/gruvboxr")
+
+# Before running copyconfig, source env
+
+
+
