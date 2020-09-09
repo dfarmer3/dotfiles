@@ -51,11 +51,11 @@ bind -n F2 previous-window
 
 
 new-session -d -s anaconda -n shell "zsh" 
-new-window -d -n CPS-271 -c "/mnt/Samsung-USB/coursework/c++" "zsh"
-new-window -d -n CHN-111 -c "/mnt/Samsung-USB/coursework/chinese" "zsh"
-new-window -d -n MTH-192 -c "/mnt/Samsung-USB/coursework/calc" "zsh"
-new-window -d -n MTH-197 -c "/mnt/Samsung-USB/coursework/linear_algebra" "zsh"
-new-window -d -n MUS-140 -c "/mnt/Samsung-USB/coursework/music_theory" "zsh"
+new-window -d -n CPS-271 -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++" "zsh"
+new-window -d -n CHN-111 -c "/run/media/dennisfarmer/Samsung-USB/coursework/chinese" "zsh"
+new-window -d -n MTH-192 -c "/run/media/dennisfarmer/Samsung-USB/coursework/calc" "zsh"
+new-window -d -n MTH-197 -c "/run/media/dennisfarmer/Samsung-USB/coursework/linear_algebra" "zsh"
+new-window -d -n MUS-140 -c "/run/media/dennisfarmer/Samsung-USB/coursework/music_theory" "zsh"
 
 
 # tmux.conf for the anaconda environment
