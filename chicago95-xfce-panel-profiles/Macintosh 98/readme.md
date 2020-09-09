@@ -35,3 +35,13 @@
 ### Screensaver
 
         Interaggregate
+
+### Session and Startup
+
+    --> Application Autostart:
+
+        Name: XMODMAP
+        Description: Swaps esc and capslock
+        Command: xmodmap /home/user/.config/.Xmodmap
+        Trigger: on login
+
