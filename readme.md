@@ -59,7 +59,9 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 - **Install Anaconda**
  
   Go to `https://www.anaconda.com/products/individual#linux`
+
   Click 64-Bit (x86) Installer under "Linux"
+ 
   Run: `bash ~/Downloads/Anaconda3 ... -Linux-x86_64.sh`
 
 - **Install Vundle**
@@ -84,8 +86,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 - **Install zsh-syntax-highlighting**
 
     ```
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \ 
-    ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     ```
 
 - **Install zsh-autosuggestions**

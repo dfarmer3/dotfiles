@@ -5,7 +5,7 @@
 sudo dnf install \
 firefox cheese konsole kate gimp \ # programs
 vim tmux brasero zsh neofetch onedrive youtube-dl \ # terminal programs
-exfat-utils fuse-exfat unrar nodejs latexmk texlive texlive-isodate texlive-textpos ffmpeg jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
+nodejs latexmk texlive texlive-isodate texlive-textpos jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
 xfce4-panel-profiles \ #xfce specific
 #xarchiver 
 chsh -s $(which zsh)
@@ -16,6 +16,12 @@ mkdir ~/.vim/backup
 mkdir ~/.vim/swap
 
 https://rpmfusion.org/Configuration/
+
+# rpmfusion free
+sudo dnf install -y ffmpeg exfat-utils fuse-exfat 
+# rpmfusion nonfree
+sudo dnf install -y unrar
+
 
 ### Import Github scripts
 mkdir ~/github
