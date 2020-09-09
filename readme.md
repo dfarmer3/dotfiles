@@ -123,6 +123,12 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
     ```
 
+-  **Enable Rpmfusion Repositories**
+    
+    ```
+    sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+    ```
+
 - **Enable Beefy Miracle Boot Theme**
     
     ![ ](images/plymouth-hotdog.png)

@@ -15,7 +15,8 @@ chsh -s $(which zsh)
 mkdir ~/.vim/backup
 mkdir ~/.vim/swap
 
-https://rpmfusion.org/Configuration/
+# https://rpmfusion.org/Configuration/
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # rpmfusion free
 sudo dnf install -y ffmpeg exfat-utils fuse-exfat 
