@@ -151,6 +151,12 @@ sudo updatedb
 locate [...]
 ```    
 
+# Update Anacomda
+
+```
+conda update -n base -c defaults conda
+```
+
 # Create R Enviroment
 
 ```
