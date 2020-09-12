@@ -2,8 +2,8 @@
 
 ### Install Programs
 
-sudo dnf install \
-firefox cheese konsole kate gimp \ # programs
+sudo dnf install -y \
+firefox okular cheese konsole kate gimp \ # programs
 vim tmux brasero zsh neofetch onedrive youtube-dl \ # terminal programs
 nodejs latexmk texlive texlive-isodate texlive-textpos jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
 xfce4-panel-profiles \ #xfce specific
@@ -16,7 +16,7 @@ mkdir ~/.vim/backup
 mkdir ~/.vim/swap
 
 # https://rpmfusion.org/Configuration/
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # rpmfusion free
 sudo dnf install -y ffmpeg exfat-utils fuse-exfat 
