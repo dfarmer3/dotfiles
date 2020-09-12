@@ -175,7 +175,7 @@ conda list
 ```r
 install.packages("pracma")
 # OR
-install.packages("pracma", repos="http://R-Forge.R-project.org")
+install.packages("pracma", repos="https://repo.miserver.it.umich.edu/cran")
 ```
 
 Add to library (akin to python `import`):
