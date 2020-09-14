@@ -143,7 +143,24 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 <br>
 <hr>
-    
+   
+# Set Custom Screen Resolution
+
+_Useful for when the really expensive 1440p screen on your X1 Carbon breaks internally at the far edges and you're too poor to buy a Macbook Pro:_
+
+```zsh
+cvt 2460 1440
+```
+
+Output: `Modeline "2464x1440_60.00" 299.25 2464 ... [a bunch of numbers] ... -hsync +vsync`
+
+```zsh
+xrandr --newmode "2464x1440_60.00" 299.25 2464 ... [everything after Modeline]
+xrandr --listmonitors # ... eDP-1
+xrandr --addmode eDP-1 "2464x1440_60.00"
+xrandr --output eDP-1 --mode "2464x1440_60.00"
+```
+
 # Find Files
 
 ```
@@ -151,7 +168,7 @@ sudo updatedb
 locate [...]
 ```    
 
-# Update Anacomda
+# Update Anaconda
 
 ```
 conda update -n base -c defaults conda
