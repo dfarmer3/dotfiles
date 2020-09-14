@@ -8,11 +8,18 @@ display:none !important;
 }
     
 /*
-   Override hiding of Bookmarks Toolbar in F11 full screen
+   Override hiding of Bookmarks Toolbar and Menu Bar in F11 full screen
    when you roll down the tabs/main toolbar 
 */
-#navigator-toolbox[inFullscreen="true"] #PersonalToolbar {
+
+#navigator-toolbox[inFullscreen="true"] 
+#PersonalToolbar, 
+#toolbar-menubar, 
+#menubar-items, 
+#main-menubar {
+
   visibility: unset !important;
+
 }
 
 /* Hide min, max, close in title bar */
@@ -30,7 +37,15 @@ display:none !important;
   display: none !important;
 }
 
+/* Don't hide menu bar in fullscreen (broke screen at top lol)
+
+#toolbar-menubar[moz-collapsed="true"] { visibility: visible !important; }
+#PersonalToolbar[moz-collapsed="true"] { visibility: visible !important; }
+*/
+
+
 /* Hide toolbar (ctrl-L, F6, fullscreen, hover to show) */
+/*
 #navigator-toolbox {
     height: 10px !important;
     min-height: 10px !important;
@@ -44,7 +59,7 @@ display:none !important;
 #navigator-toolbox[inFullscreen="true"] {
     height: auto !important;
 }
-
+*/
 
 
 
