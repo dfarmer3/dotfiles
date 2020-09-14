@@ -149,7 +149,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 _Useful for when the really expensive 1440p screen on your X1 Carbon breaks internally at the far edges and you're too poor to buy a Macbook Pro:_
 
 ```zsh
-cvt 2460 1440
+cvt 2464 1440
 ```
 
 Output: `Modeline "2464x1440_60.00" 299.25 2464 ... [a bunch of numbers] ... -hsync +vsync`
