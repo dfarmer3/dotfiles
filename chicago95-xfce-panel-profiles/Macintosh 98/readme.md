@@ -34,7 +34,7 @@
 
 ### Screensaver
 
-        Interaggregate
+        XMatrix
 
 ### Session and Startup
 

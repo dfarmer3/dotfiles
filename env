@@ -2,6 +2,14 @@
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Coursework
+export MTH192="/run/media/dennisfarmer/Samsung-USB/coursework/calculus"
+export MTH197="/run/media/dennisfarmer/Samsung-USB/coursework/linear_algebra"
+export CHN111="/run/media/dennisfarmer/Samsung-USB/coursework/chinese"
+export MUS140="/run/media/dennisfarmer/Samsung-USB/coursework/music_theory"
+export CPS271="/run/media/dennisfarmer/Samsung-USB/coursework/c++"
+
+
 # Programs
 export EDITOR="gvim -v"
 export VISUAL="gvim -v"
@@ -14,8 +22,6 @@ export SCRIPTS="$HOME/github/scripts"
 export VIMINIT="source $HOME/.vim/vimrc"
 export LESSHISTFILE="$HOME/.history/.lesshst"
 export PSQL_HISTORY="$HOME/.history/.psql_history"
-
-
 
 # Paths
 export ZSHRC="$XDG_CONFIG_HOME/zsh/.zshrc"

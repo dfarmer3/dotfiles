@@ -19,7 +19,7 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 
 # Screensaver:
 
-- (xscreensaver) interaggregate
+- (xscreensaver) XMatrix
 
 
 <br>
@@ -150,6 +150,48 @@ I'll write this later, no one's going to read this anyways, its just for my orga
 sudo updatedb
 locate [...]
 ```    
+
+# Update Anacomda
+
+```
+conda update -n base -c defaults conda
+```
+
+# Create R Enviroment
+
+```
+conda create -n rstudio r-essentials r-base
+```
+
+Activate Enviroment / List packages in enviroment:
+
+```
+conda activate rstudio
+conda list
+```
+
+# Install R Pracma Package for Linear Algebra (rref)
+
+```r
+install.packages("pracma")
+# OR
+install.packages("pracma", repos="https://repo.miserver.it.umich.edu/cran")
+```
+
+Add to library (akin to python `import`):
+```r
+library("pracma")
+A <- matrix(c(1,1,1,1,-1,-1,1,1,1,-1,-1,1,1,2,3,4), nrow=4, ncol=4)
+B <- rref(A)
+
+# B:
+#      [,1] [,2] [,3] [,4]
+# [1,]    1    0    0    0
+# [2,]    0    1    0    0
+# [3,]    0    0    1    0
+# [4,]    0    0    0    1
+```
+
 # Auto-Mount a Drive
 
 ```
