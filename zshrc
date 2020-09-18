@@ -46,9 +46,11 @@ alias mkdircd='f(){ mkdir -p "$1" && cd "$1"; unset -f f }; f'
 alias bashinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env bash\n|" "$1"; } else { echo "#!/usr/bin/env bash" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
 alias pyinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env python\n|" "$1"; } else { echo "#!/usr/bin/env python" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
 
+# ssh/onedrive/wsl
+alias sshpi='ssh pi@192.168.1.246'
 alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
-
+alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
 #alias spotify="flatpak run com.spotify.Client"
 alias vish="vim ~/github/dotfiles/install.sh"
 alias jsontool="python -m json.tool"
