@@ -28,3 +28,4 @@ Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
 **x1c3 (2560x1440):**
 
 - reddit.com: 170%
+- youtube.com 140%

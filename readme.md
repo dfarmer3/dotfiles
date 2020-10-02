@@ -136,6 +136,22 @@ For my terminal, I utilize the all-holy trinity (`Vim`, `Zsh`, and `Tmux` for th
     ```
     
 
+- **Disable Splash Screen**
+
+    ```
+    plymouth-set-default-theme details
+    dracut -f
+
+    # OR
+
+    edit /etc/default/grub, remove "rhgb quiet"
+
+    # FOR EFI:
+    sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+    # FOR BIOS:
+    sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+    ```
+
 
 <br>
 <hr>

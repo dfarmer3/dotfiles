@@ -24,7 +24,7 @@ set -g mouse on
 set -s escape-time 0
 
 # Powerline
-source $HOME/anaconda3/lib/python3.8/site-packages/powerline/bindings/tmux/powerline.conf
+source $HOME/anaconda3/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf
 
 set-option -g default-shell /bin/zsh
 
@@ -48,7 +48,6 @@ if-shell '[ $(printf "$(tmux -V | cut -d" " -f2)\n2.4" | sort -Vr | head -n1) ==
 
 bind -n F3 next
 bind -n F2 previous-window
-
 
 new-session -d -s anaconda -n shell "zsh" 
 new-window -d -n CPS-271 -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++" "zsh"
@@ -90,6 +89,8 @@ new-window -d -n CPS-271 -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++"
 
 ## COLORSCHEME: gruvbox dark
 set-option -g status "on"
+set-option -g status-position bottom
+
 
 # default statusbar color
 set-option -g status-style bg=colour237,fg=colour223 # bg=bg1, fg=fg1

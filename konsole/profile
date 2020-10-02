@@ -16,9 +16,4 @@ TerminalColumns=80
 TerminalRows=25
 
 [Interaction Options]
-MiddleClickPasteMode=0
 OpenLinksByDirectClickEnabled=true
-UnderlineLinksEnabled=true
-
-[Scrolling]
-ScrollBarPosition=2

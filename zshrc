@@ -1,4 +1,5 @@
-TERM=screen-256color
+#TERM=screen-256color
+TERM=xterm-256color
 export LANG=en_US.UTF-8
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -12,6 +13,7 @@ ZSH_THEME="cypher"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git vi-mode zsh-autosuggestions zsh-syntax-highlighting)
+
 source $ZSH/oh-my-zsh.sh
 
 # bindkey -e  # emacs mode
@@ -32,7 +34,10 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
+#----------------------------------------------------------------------------------------------
 # Aliases
+
+# General:
 alias ls='ls --all --almost-all --color'
 alias mkdir='mkdir -p'
 alias cl='clear'
@@ -41,10 +46,6 @@ alias 'cd..'='cd ../../'
 alias cs='f(){ cd "$1" && clear; if [ -z "$1" ]; then { cd; } else { ls; } fi; unset -f f; }; f'
 alias 'cs.'='cs .'
 alias wget='wget --no-hsts'
-alias mkdircd='f(){ mkdir -p "$1" && cd "$1"; unset -f f }; f'
-
-alias bashinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env bash\n|" "$1"; } else { echo "#!/usr/bin/env bash" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
-alias pyinit='f(){ if [ -s "$1" ]; then { sed -i. "1s|^|#!/usr/bin/env python\n|" "$1"; } else { echo "#!/usr/bin/env python" >> "$1"; } fi; chmod +x "$1"; gvim -v "$1"; unset -f f }; f'
 
 # ssh/onedrive/wsl
 alias sshpi='ssh pi@192.168.1.246'
@@ -52,8 +53,8 @@ alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
 alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
 #alias spotify="flatpak run com.spotify.Client"
-alias vish="vim ~/github/dotfiles/install.sh"
-alias jsontool="python -m json.tool"
+alias vish='vim ~/github/dotfiles/install.sh'
+alias jsontool='python -m json.tool'
 
 alias dsa='anaconda-navigator'
 
@@ -71,10 +72,6 @@ alias base='conda activate; HOST=$(hostname); clear'
 if type gvim > /dev/null 2>&1; then
     alias vim="gvim -v"
 fi
-
-# Suffix aliases
-alias -s {md,json,txt}=vim
-alias -s {pdf}=$PDFVIEWER
 
 # Python conda initialize
 __conda_setup="$('/home/dennisfarmer/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -126,12 +123,14 @@ key=(
 # Launch TMUX
 export TMUXRC="$HOME/.config/tmux/tmuxrc"
 alias tmux="tmux -2 -f $TMUXRC"
+alias tmus="tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda"
+
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
+    trap clear SIGINT
+    echo "Ctl-C to skip TMUX auto attach..."; sleep 1 && tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
+    clear
 fi
 
 # Run neofetch to flex on the normies
-
-neofetch
-
+# neofetch
 # $player

@@ -1,2 +1,0 @@
-# Cygwin Dotfile Installation Walkthrough
-
