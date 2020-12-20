@@ -2,11 +2,18 @@
 
 ### Install Programs
 
-sudo dnf install -y \
-firefox okular cheese konsole kate gimp \ # programs
-vim tmux brasero zsh neofetch onedrive youtube-dl \ # terminal programs
-nodejs latexmk texlive texlive-isodate texlive-textpos jq cmake g++ hplip-gui flatpak autokey-gtk postgresql \ # miscellaneous
-xfce4-panel-profiles \ #xfce specific
+sudo dnf install -y firefox okular cheese konsole kate gimp vim gvim tmux brasero zsh neofetch onedrive youtube-dl nodejs latexmk texlive texlive-isodate texlive-textpos xclip jq cmake g++ hplip-gui flatpak autokey-gtk postgresql xfce4-panel-profiles
+
+# Install Vim Package Manager
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# Install OhMyZsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# Install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# Install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
 #xarchiver 
 chsh -s $(which zsh)
 ###
@@ -28,10 +35,10 @@ sudo dnf install -y unrar
 mkdir ~/github
 cd ~/github
 
-git clone https://github.com/dennisfarmer/dotfiles.git 
+# git clone https://github.com/dennisfarmer/dotfiles.git 
 git clone https://github.com/dennisfarmer/dennisfarmer.github.io.git 
 git clone https://github.com/dennisfarmer/cengage-webscraper.git
-git clone https://github.com/dennisfarmer/scripts.git
+# git clone https://github.com/dennisfarmer/scripts.git
 git clone https://github.com/dennisfarmer/Factors-of-Academic-Success.git 
 
 # Script installation:
@@ -40,11 +47,8 @@ chmod u+x $HOME/bin/copyconfig
 
 cp ./scripts/sort_course_files/sort_course_files.sh $HOME/bin/sort_course_files && chmod u+x $HOME/bin/sort_course_files
 
-# $SCRIPTS = home/user/github/scripts (vimrc line)
-chmod u+x ./scripts/latex_autocompile_vim/latex_script.sh
-
-
 ### Import Dotfiles (after all programs are installed)
+source ~/github/dotfiles/zshenv
 cd ~/github/dotfiles
 copyconfig -i
 
@@ -57,16 +61,16 @@ sudo dnf install ruby ruby-devel @development-tools
 #echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 #echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 #source ~/.bashrc
-gem install jekyll bundler
+# gem install jekyll bundler
 
 
 
 # Postgres
-conda install -c conda-forge postgresql
+# conda install -c conda-forge postgresql
 
 
-conda install -c conda-forge pygobject #for chicago95 autoinstall
-sudo echo "localhost.localdomain" > /etc/hostname
+# conda install -c conda-forge pygobject #for chicago95 autoinstall
+# sudo echo "localhost.localdomain" > /etc/hostname
 
 
 

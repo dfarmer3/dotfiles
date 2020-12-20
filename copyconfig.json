@@ -18,10 +18,6 @@
 "inputrc": "/etc/inputrc",
 "Xmodmap": "$HOME/.config/.Xmodmap",
 
-"firefox/userChrome.css": "$HOME/.mozilla/firefox/bg1kmeem.default-release/chrome/userChrome.css",
-"firefox/firefox_profiles.ini": "$HOME/.mozilla/firefox/profiles.ini",
-"firefox/firefox_installs.ini": "$HOME/.mozilla/firefox/installs.ini",
-
 "fonts": "$HOME/.local/share/fonts",
 "powerline": "$HOME/.config/powerline"
 }
