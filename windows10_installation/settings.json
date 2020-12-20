@@ -1,0 +1,24 @@
+{
+    "workbench.colorTheme": "Material Theme Palenight",
+    "keyboard.dispatch": "keyCode",
+    "vim.cursorStylePerMode.normal": "line",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.replace": "line",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "'consolas'",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "terminal.integrated.fontFamily": "'consolas'",
+    "terminal.integrated.automationShell.linux": "",
+    "terminal.integrated.shell.windows": "C:\\cygwin64\\bin\\zsh.exe",
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1"
+    },
+    "terminal.integrated.shellArgs.windows": [
+        "--login",
+        "-i"
+    ]
+}
