@@ -14,8 +14,12 @@ SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAABMwAAAVPAAAABAAAAAQAAAAIAAAACPwAAAAA
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABMwAAAVuAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+
+[Notification Messages]
+CloseAllTabs=true
 
 [TabBar]
 CloseTabButton=None
