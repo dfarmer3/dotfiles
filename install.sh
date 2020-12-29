@@ -2,7 +2,14 @@
 
 ### Install Programs
 
-sudo dnf install -y firefox okular cheese konsole kate gimp vim gvim tmux brasero zsh neofetch onedrive youtube-dl nodejs latexmk texlive texlive-isodate texlive-textpos xclip jq cmake g++ hplip-gui flatpak autokey-gtk postgresql xfce4-panel-profiles
+sudo dnf install -y firefox okular cheese konsole kate gimp vim gvim tmux brasero zsh cups neofetch onedrive youtube-dl nodejs jq latexmk texlive texlive-isodate texlive-textpos xclip hplip-gui flatpak autokey-gtk xpad krita gwenview
+
+
+# Programming Packages
+sudo dnf install -y cmake g++ R rstudio python-devel git postgresql libpq-devel
+pip install numpy pandas scikit-learn seaborn matplotlib scipy psycopg2
+# https://fedoramagazine.org/jupyter-and-data-science-in-fedora/
+# sudo dnf install -y xfce4-panel-profiles
 
 # Install Vim Package Manager
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -50,13 +57,16 @@ cp ./scripts/sort_course_files/sort_course_files.sh $HOME/bin/sort_course_files 
 ### Import Dotfiles (after all programs are installed)
 source ~/github/dotfiles/zshenv
 cd ~/github/dotfiles
+
+# TODO: make option to skip confirmation prompt
 copyconfig -i
+vim +PluginInstall +qall
 
 
 
 
 ### Jekyll
-sudo dnf install ruby ruby-devel @development-tools
+sudo dnf install -y ruby ruby-devel @development-tools
 #echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 #echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 #echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
