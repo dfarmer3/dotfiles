@@ -14,10 +14,11 @@ SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
-LVDS-1 XPosition=473
-LVDS-1 YPosition=24
+LVDS-1 XPosition=-48
+LVDS-1 YPosition=118
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAAyIAAAHdAAAABAAAAAQAAAAIAAAACPwAAAAA
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAAAABQAAAAMgAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 VGA-1 LVDS-1 XPosition=965
 VGA-1 LVDS-1 YPosition=56

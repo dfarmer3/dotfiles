@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=Gruvbox_dark
-Font=Consolas,13,-1,5,50,0,0,0,0,0
+Font=JetBrains Mono,13,-1,5,50,0,0,0,0,0
 
 [Cursor Options]
 CursorShape=1
