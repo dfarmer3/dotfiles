@@ -53,7 +53,6 @@ set mouse=a
 set scrolloff=16
 set cursorline
 set wrap linebreak
-" set nofoldenable "disable folding, normal mode zi to disable
 set background=dark
 "colorscheme gruvbox
 "let g:material_theme_style = 'palenight'

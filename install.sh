@@ -82,8 +82,11 @@ sudo dnf install -y ruby ruby-devel @development-tools
 # conda install -c conda-forge pygobject #for chicago95 autoinstall
 # sudo echo "localhost.localdomain" > /etc/hostname
 
-
-
+#sudo dnf install -y conda
+# conda create -n rstats R rstudio
+sudo dnf install -y flatpak
+sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub ch.openboard.OpenBoard
 ### todo: autostart the following lines on startup:
 #xmodmap ~/.config/.Xmodmap
 #autokey-gtk

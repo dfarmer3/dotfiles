@@ -1,12 +1,13 @@
 #TERM=screen-256color
 TERM=xterm-256color
 export LANG=en_US.UTF-8
-
+# 88x52 best halfscreen zoom term level
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # oh-my-zsh
 export ZSH="/home/dennisfarmer/.oh-my-zsh"
+# ZSH_THEME="Chicago95"
 ZSH_THEME="cypher"
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 
@@ -51,9 +52,7 @@ alias wget='wget --no-hsts'
 alias sshpi='ssh pi@192.168.1.246'
 alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
-alias wcc='cd /run/media/dennisfarmer/Samsung-USB/coursework'
-alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++/machine_problems'
-alias chn='cd /run/media/dennisfarmer/Samsung-USB/coursework/chinese/translator'
+alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
 #alias spotify="flatpak run com.spotify.Client"
 alias vish='vim ~/github/dotfiles/install.sh'
 alias jsontool='python -m json.tool'

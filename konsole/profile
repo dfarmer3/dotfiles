@@ -18,3 +18,6 @@ TerminalRows=25
 
 [Interaction Options]
 OpenLinksByDirectClickEnabled=true
+
+[Scrolling]
+ScrollBarPosition=2
