@@ -8,6 +8,16 @@ sudo dnf install -y firefox okular cheese konsole kate gimp vim gvim tmux braser
 # Programming Packages
 sudo dnf install -y cmake g++ R rstudio python-devel git postgresql libpq-devel
 pip install numpy pandas scikit-learn seaborn matplotlib scipy psycopg2
+
+
+# pip install or conda install
+
+# dbus-python PyGObject
+
+
+
+
+
 # https://fedoramagazine.org/jupyter-and-data-science-in-fedora/
 # sudo dnf install -y xfce4-panel-profiles
 
