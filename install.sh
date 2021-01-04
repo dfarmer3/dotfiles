@@ -69,7 +69,7 @@ source ~/github/dotfiles/zshenv
 cd ~/github/dotfiles
 
 # TODO: make option to skip confirmation prompt
-copyconfig -i
+copyconfig --script
 vim +PluginInstall +qall
 
 

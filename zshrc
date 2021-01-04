@@ -1,12 +1,13 @@
 #TERM=screen-256color
 TERM=xterm-256color
 export LANG=en_US.UTF-8
-
+# 88x52 best halfscreen zoom term level
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # oh-my-zsh
 export ZSH="/home/dennisfarmer/.oh-my-zsh"
+# ZSH_THEME="Chicago95"
 ZSH_THEME="cypher"
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 
@@ -51,13 +52,17 @@ alias wget='wget --no-hsts'
 alias sshpi='ssh pi@192.168.1.246'
 alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
-alias wcc='cd /run/media/dennisfarmer/Samsung-USB/coursework'
-alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++/machine_problems'
-alias chn='cd /run/media/dennisfarmer/Samsung-USB/coursework/chinese/translator'
+
+# Washtenaw Community College USB Drive Shortcuts
+alias wcc='cd /run/media/dennisfarmer/samsung-usb/coursework'
+alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
+alias chn='cd /run/media/dennisfarmer/samsung-usb/coursework/chinese/translator'
+
+
+# Bindings for obscure stuff
 #alias spotify="flatpak run com.spotify.Client"
 alias vish='vim ~/github/dotfiles/install.sh'
 alias jsontool='python -m json.tool'
-
 alias dsa='anaconda-navigator'
 
 # conda activate [...] changes $HOST to "x86_64-conda_cos6-linux-gnu"
@@ -65,12 +70,14 @@ alias dsa='anaconda-navigator'
 # Conflicts with ZSH prompt, so reset with
 # HOST=$(hostname)
 
+# Data Science
 alias R='R --no-save'
 alias r='conda activate rstudio; HOST=$(hostname); clear; R --no-save'
 alias renv='conda activate rstudio; HOST=$(hostname); clear;'
 alias rstudio='conda activate rstudio; HOST=$(hostname); rstudio'
 alias base='conda activate; HOST=$(hostname); clear'
 
+# Use Gvim to allow access to clipboard (probs change to neovim later idc)
 if type gvim > /dev/null 2>&1; then
     alias vim="gvim -v"
 fi

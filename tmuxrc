@@ -24,7 +24,8 @@ set -g mouse on
 set -s escape-time 0
 
 # Powerline
-source $HOME/anaconda3/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf
+# Figure out how to normalize this to different python versions
+# source $HOME/anaconda3/lib/python3.7/site-packages/powerline/bindings/tmux/powerline.conf
 
 set-option -g default-shell /bin/zsh
 
