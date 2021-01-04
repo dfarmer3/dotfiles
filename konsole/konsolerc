@@ -14,16 +14,12 @@ SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
-LVDS-1 XPosition=-48
-LVDS-1 YPosition=118
 MenuBar=Disabled
-RestorePositionForNextInstance=false
-State=AAAA/wAAAAD9AAAAAAAABQAAAAMgAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABMwAAAVuAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-VGA-1 LVDS-1 XPosition=965
-VGA-1 LVDS-1 YPosition=56
-VGA-1 XPosition=965
-VGA-1 YPosition=56
+
+[Notification Messages]
+CloseAllTabs=true
 
 [TabBar]
 CloseTabButton=None

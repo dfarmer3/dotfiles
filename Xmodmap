@@ -3,12 +3,3 @@ remove Lock = Caps_Lock
 keysym Escape = Caps_Lock
 keysym Caps_Lock = Escape
 add Lock = Caps_Lock
-
-! xev to view key events (keycode ... (keysym ... , XF86Forward))
-! xmodmap -pke | grep ...
-! X200 / X230: Add PgUp and PgDn next to arrow keys
-
-keysym XF86Back = Prior
-keysym XF86Forward = Next
-
-! Give functionality to X200 Tablet screen keys
