@@ -39,7 +39,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 # Aliases
 
 # General:
-alias ls='ls --all --almost-all --color'
+alias ls='ls --all --almost-all --color -hN --group-directories-first'
+alias grep="grep --color=auto"
 alias mkdir='mkdir -p'
 alias cl='clear'
 alias 'cd.'='cd ..'
@@ -48,15 +49,19 @@ alias cs='f(){ cd "$1" && clear; if [ -z "$1" ]; then { cd; } else { ls; } fi; u
 alias 'cs.'='cs .'
 alias wget='wget --no-hsts'
 
+# Scripting
+# perl -MCPAN -e shell
+# cpan [PACKAGE]
+
 # ssh/onedrive/wsl
 alias sshpi='ssh pi@192.168.1.246'
 alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/Dennis'
 
 # Washtenaw Community College USB Drive Shortcuts
-alias wcc='cd /run/media/dennisfarmer/samsung-usb/coursework'
+alias wcc='cd /run/media/dennisfarmer/Samsung-USB/coursework'
 alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
-alias chn='cd /run/media/dennisfarmer/samsung-usb/coursework/chinese/translator'
+alias chn='cd /run/media/dennisfarmer/Samsung-USB/coursework/chinese/translator'
 
 
 # Bindings for obscure stuff
@@ -80,6 +85,7 @@ alias base='conda activate; HOST=$(hostname); clear'
 # Use Gvim to allow access to clipboard (probs change to neovim later idc)
 if type gvim > /dev/null 2>&1; then
     alias vim="gvim -v"
+    alias vi="gvim -v"
 fi
 
 # Python conda initialize
@@ -137,6 +143,7 @@ alias tmus="tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda"
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     trap clear SIGINT
     echo "Ctl-C to skip TMUX auto attach..."; sleep 1 && tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
+pgrep tmux >/dev/null&& tmux set -g status off
     clear
 fi
 

@@ -53,6 +53,7 @@ set mouse=a
 set scrolloff=16
 set cursorline
 set wrap linebreak
+" set wrap! to toggle
 " set nofoldenable "disable folding, normal mode zi to disable
 set background=dark
 "colorscheme gruvbox
@@ -93,6 +94,15 @@ set shiftround
 " ctrl+v <tab> to insert actual \t character
 set smarttab
 set expandtab
+
+" -----------------------------------------------
+"  Splits
+" sp / vsp [FILENAME]
+set splitbelow splitright
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>
 
 " -----------------------------------------------
 " Clipboard

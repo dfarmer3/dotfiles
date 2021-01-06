@@ -18,6 +18,8 @@ Search for "userprof"
 
 Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
 
+Set `accessibility.typeaheadfind.enablesound` to `false`
+
 ### Website Zoom Levels:
 
 **x230 (1366x758):**

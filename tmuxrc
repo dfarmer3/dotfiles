@@ -17,11 +17,22 @@ bind \\ split-window -h -c '#{pane_current_path}'
 bind - split-window -v -c '#{pane_current_path}'
 
 
+# Vim-like pane nav
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
 # Mouse mode
 set -g mouse on
 
 # Prevents Vim from lagging
 set -s escape-time 0
+
+# Hide Status Bar
+set -g status off
+bind-key e set -g status
+
 
 # Powerline
 # Figure out how to normalize this to different python versions
@@ -51,7 +62,7 @@ bind -n F3 next
 bind -n F2 previous-window
 
 new-session -d -s anaconda -n shell "zsh" 
-new-window -d -n CPS-271 -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++" "zsh"
+new-window -d -n EECS -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++" "zsh"
 
 
 # tmux.conf for the anaconda environment
