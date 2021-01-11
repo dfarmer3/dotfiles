@@ -15,14 +15,14 @@ pip install numpy pandas scikit-learn seaborn matplotlib scipy psycopg2
 
 # Perl and youtube-viewer
 sudo dnf install -y perl
-cpan LWP Data::Dump JSON LWP::Protocol::https
+# cpan LWP Data::Dump JSON LWP::Protocol::https
 # Make alias for downloads folder in env file
-mkdir -p ~/Downloads/Git
-cd ~/Downloads/Git
-git clone https://github.com/trizen/youtube-viewer.git
-perl Build.PL
-sudo ./Build install deps
-sudo ./Build install
+# mkdir -p ~/Downloads/Github
+# cd ~/Downloads/Github
+# git clone https://github.com/trizen/youtube-viewer.git
+# perl Build.PL
+# sudo ./Build install deps
+# sudo ./Build install
 
 # Ruby and Jekyll
 sudo dnf install -y ruby ruby-devel @development-tools
@@ -35,8 +35,8 @@ sudo dnf install -y ruby ruby-devel @development-tools
 
 
 # pip install or conda install
-pip install dbus-python PyGObject
-sudo dnf install -y alsa-lib-devel
+# pip install dbus-python PyGObject
+# sudo dnf install -y alsa-lib-devel
 # https://github.com/Spotifyd/spotifyd
 
 
@@ -119,9 +119,9 @@ snap install spotify
 
 #sudo dnf install -y conda
 # conda create -n rstats R rstudio
-sudo dnf install -y flatpak
-sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub ch.openboard.OpenBoard
+# sudo dnf install -y flatpak
+# sudo flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak install flathub ch.openboard.OpenBoard
 ### todo: autostart the following lines on startup:
 #xmodmap ~/.config/.Xmodmap
 #autokey-gtk
