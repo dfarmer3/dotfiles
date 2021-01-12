@@ -8,6 +8,8 @@
 
 sudo dnf install -y firefox okular cheese konsole kate gimp vim gvim tmux brasero zsh cups neofetch onedrive youtube-dl nodejs jq latexmk texlive texlive-isodate texlive-textpos xclip hplip-gui flatpak autokey-gtk xpad krita gwenview
 
+# sudo apt-get install -y firefox okular cheese konsole kate gimp vim gvim tmux brasero zsh cups neofetch onedrive youtube-dl nodejs jq latexmk texlive xclip hplip-gui flatpak autokey-gtk xpad krita gwenview
+
 
 ### Programming Packages
 sudo dnf install -y cmake g++ R rstudio python-devel git postgresql libpq-devel libev-devel
