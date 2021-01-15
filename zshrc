@@ -135,6 +135,13 @@ key=(
 [[ -n "${key[Home]}"      ]] && bindkey -M vicmd "${key[Home]}" beginning-of-line
 [[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
 
+# Load ls colors
+if [[ -f ~/.dircolors ]] ; then
+    eval $(dircolors -b ~/.dircolors)     
+# elif [[ -f /etc/DIR_COLORS ]] ; then
+    # eval $(dircolors -b /etc/DIR_COLORS)
+fi
+
 # Launch TMUX
 export TMUXRC="$HOME/.config/tmux/tmuxrc"
 alias tmux="tmux -2 -f $TMUXRC"

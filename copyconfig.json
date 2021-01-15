@@ -6,6 +6,7 @@
 "condarc": "$HOME/.condarc",
 "psqlrc": "$PGSYSCONFDIR/psqlrc",
 "gitconfig": "$HOME/.gitconfig",
+"dircolors": "$HOME/.dircolors",
 "neofetch.conf":"$XDG_CONFIG_HOME/neofetch/config.conf",
 
 "konsole/konsolerc": "$XDG_CONFIG_HOME/konsolerc",

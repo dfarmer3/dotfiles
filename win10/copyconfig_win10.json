@@ -3,5 +3,6 @@
 "zshenv": "$HOME/.zshenv",
 "vimrc": "$HOME/.vim/vimrc",
 "tmuxrc": "$XDG_CONFIG_HOME/tmux/tmuxrc",
+"dircolors": "$HOME/.dircolors",
 "gitconfig": "$HOME/.gitconfig"
 }

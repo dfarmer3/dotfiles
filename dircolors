@@ -1,0 +1,15 @@
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+# Copyright (C) 1996-2018 Free Software Foundation, Inc.
+# Copying and distribution of this file, with or without modification,
+# are permitted provided the copyright notice and this notice are preserved.
+
+
+# https://unix.stackexchange.com/questions/94498/what-causes-this-green-background-in-ls-output
+# http://twistedcode.org/2008/04/ls_colors-explained/
+# Generate with:
+#    dircolors -p > ~/.dircolors
+# Load file with:
+#    eval "$(dircolors ~/.dircolors)"
+
+OTHER_WRITABLE 01;35 # dir that is other-writable (o+w) and not sticky
