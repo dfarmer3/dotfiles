@@ -14,11 +14,10 @@ Copy `installs.ini` and `profiles.ini` to your firefox directory (`$HOME/.mozill
 
 Visit `about:config` from Firefox
 
-Search for "userprof"
 
 Set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
-
 Set `accessibility.typeaheadfind.enablesound` to `false`
+Set `browser.tabs.insertAfterCurrent` to `true`
 
 ### Website Zoom Levels:
 

@@ -4,5 +4,6 @@
 "vimrc": "$HOME/.vim/vimrc",
 "tmuxrc": "$XDG_CONFIG_HOME/tmux/tmuxrc",
 "dircolors": "$HOME/.dircolors",
-"gitconfig": "$HOME/.gitconfig"
+"gitconfig": "$HOME/.gitconfig",
+"win10/caps.ahk": "/mnt/c/Users/denni/AppData/Roaming/Microsoft/Windows/Start\ Menu/Programs/Startup/caps.ahk"
 }

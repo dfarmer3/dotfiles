@@ -48,6 +48,7 @@ alias 'cd..'='cd ../../'
 alias cs='f(){ cd "$1" && clear; if [ -z "$1" ]; then { cd; } else { ls; } fi; unset -f f; }; f'
 alias 'cs.'='cs .'
 alias wget='wget --no-hsts'
+alias python='python3'
 
 # Scripting
 # perl -MCPAN -e shell

@@ -21,6 +21,7 @@ Plugin 'preservim/nerdcommenter'
 
 " Writing
 Plugin 'junegunn/goyo.vim'
+Plugin 'lervag/vimtex'
 
 " Vim-airline
 " Plugin 'vim-airline/vim-airline'
@@ -178,8 +179,13 @@ let g:goyo_width = 106
 " -----------------------------------------------
 " LaTeX
 
-" Auto-compile
-autocmd FileType latex,plaintex nnoremap <buffer> <Leader>p :w <bar> !$SCRIPTS/latex_autocompile_vim/latex_script.sh % & disown <CR><CR>
+let g:lex_flavor='latex'
+" let g:vimtex_view_method='okular'
+let g:vimtex_quickfix_mode=0
+let conceallevel=1
+let g:tex_conceal='abdmg'
+
+
 
 " -----------------------------------------------
 " Bash
