@@ -55,14 +55,17 @@ alias python='python3'
 # cpan [PACKAGE]
 
 # ssh/onedrive/wsl
-alias sshpi='ssh pi@192.168.1.246'
-alias ods='onedrive --synchronize'
-alias cdwin='cd /mnt/c/Users/Dennis'
+# alias sshpi='ssh pi@192.168.1.246'
+# alias ods='onedrive --synchronize'
+alias cdwin='cd /mnt/c/Users/denni'
 
 # Washtenaw Community College USB Drive Shortcuts
-alias wcc='cd /run/media/dennisfarmer/Samsung-USB/coursework'
-alias cps='cd /run/media/dennisfarmer/Samsung-USB/coursework/c++'
-alias chn='cd /run/media/dennisfarmer/Samsung-USB/coursework/chinese/translator'
+alias wcc='cd /mnt/c/Users/denni/Downloads/coursework'
+alias cps='cd /mnt/c/Users/denni/Downloads/coursework/cps272'
+alias phy='cd /mnt/c/Users/denni/Downloads/coursework/phy111'
+alias mth='cd /mnt/c/Users/denni/Downloads/coursework/mth293'
+alias coverletter="cd /mnt/c/Users/denni/Downloads/coursework/internships/cover\ letter/Awesome-CV/examples"
+alias cv="cd /mnt/c/Users/denni/Downloads/coursework/umich_summer_institute/cv"
 
 
 # Bindings for obscure stuff
@@ -77,11 +80,11 @@ alias dsa='anaconda-navigator'
 # HOST=$(hostname)
 
 # Data Science
-alias R='R --no-save'
-alias r='conda activate rstudio; HOST=$(hostname); clear; R --no-save'
-alias renv='conda activate rstudio; HOST=$(hostname); clear;'
-alias rstudio='conda activate rstudio; HOST=$(hostname); rstudio'
-alias base='conda activate; HOST=$(hostname); clear'
+# alias R='R --no-save'
+# alias r='conda activate rstudio; HOST=$(hostname); clear; R --no-save'
+# alias renv='conda activate rstudio; HOST=$(hostname); clear;'
+# alias rstudio='conda activate rstudio; HOST=$(hostname); rstudio'
+# alias base='conda activate; HOST=$(hostname); clear'
 
 # Use Gvim to allow access to clipboard (probs change to neovim later idc)
 if type gvim > /dev/null 2>&1; then
@@ -103,25 +106,25 @@ fi
 unset __conda_setup
 
 # Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+# export GEM_HOME="$HOME/gems"
+# export PATH="$HOME/gems/bin:$PATH"
 
 # Fix home key error
 
-typeset -A key
-key=(
-  BackSpace  "${terminfo[kbs]}"
-  Home       "${terminfo[khome]}"
-  End        "${terminfo[kend]}"
-  Insert     "${terminfo[kich1]}"
-  Delete     "${terminfo[kdch1]}"
-  Up         "${terminfo[kcuu1]}"
-  Down       "${terminfo[kcud1]}"
-  Left       "${terminfo[kcub1]}"
-  Right      "${terminfo[kcuf1]}"
-  PageUp     "${terminfo[kpp]}"
-  PageDown   "${terminfo[knp]}"
-)
+#typeset -A key
+#key=(
+  #BackSpace  "${terminfo[kbs]}"
+  #Home       "${terminfo[khome]}"
+  #End        "${terminfo[kend]}"
+  #Insert     "${terminfo[kich1]}"
+  #Delete     "${terminfo[kdch1]}"
+  #Up         "${terminfo[kcuu1]}"
+  #Down       "${terminfo[kcud1]}"
+  #Left       "${terminfo[kcub1]}"
+  #Right      "${terminfo[kcuf1]}"
+  #PageUp     "${terminfo[kpp]}"
+  #PageDown   "${terminfo[knp]}"
+#)
 
 # Setup key accordingly
 [[ -n "${key[BackSpace]}" ]] && bindkey "${key[BackSpace]}" backward-delete-char
@@ -136,11 +139,9 @@ key=(
 [[ -n "${key[Home]}"      ]] && bindkey -M vicmd "${key[Home]}" beginning-of-line
 [[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
 
-# Load ls colors
+# Lod ls colors
 if [[ -f ~/.dircolors ]] ; then
-    eval $(dircolors -b ~/.dircolors)     
-# elif [[ -f /etc/DIR_COLORS ]] ; then
-    # eval $(dircolors -b /etc/DIR_COLORS)
+    eval $(dircolors -b ~/.dircolors)
 fi
 
 # Launch TMUX
@@ -150,9 +151,10 @@ alias tmus="tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda"
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     trap clear SIGINT
-    echo "Ctl-C to skip TMUX auto attach..."; sleep 1 && tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
-pgrep tmux >/dev/null&& tmux set -g status off
+    echo "Ctl-C to skip TMUX auto attach..."; sleep 0.2s && tmux attach -t anaconda 2>/dev/null || tmux new -s anaconda
+    pgrep tmux >/dev/null && tmux set -g status off
     clear
+    # tmux attach -t anaconda 2>/dev/null
 fi
 
 # Run neofetch to flex on the normies
