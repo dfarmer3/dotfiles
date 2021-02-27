@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sudo apt-get update
-sudo apt-get install -y vim vim-gtk3 wget jq zsh tmux make cmake gcc tree texlive-xetex
+sudo apt-get install -y vim vim-gtk3 wget jq zsh tmux make cmake gcc tree texlive-xetex texlive-bibtex-extra biber python3-pip
 mkdir -p ~/.local/bin
 mkdir -p github
 git clone https://github.com/dennisfarmer/dotfiles.git ~/github/dotfiles >/dev/null 2>&1 || echo "dennisfarmer/dotfiles.git already downloaded from github..."
