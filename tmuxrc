@@ -13,9 +13,23 @@ bind Space send-prefix
 unbind '"'
 unbind %
 # bind | split-window -h
-bind \\ split-window -h -c '#{pane_current_path}'
+# bind \\ split-window -h -c '#{pane_current_path}'
+bind \ split-window -h -c '#{pane_current_path}'
 bind - split-window -v -c '#{pane_current_path}'
 
+# vi keys to scroll ( prefix + [ to enter scroll, enter to exit)
+setw mode-keys vi
+
+# Half page down               C-d
+# Half page up                 C-u
+# Next page                    C-f
+# Previous page                C-b
+# Scroll down                  C-Down or C-e
+# Scroll up                    C-Up or C-y
+# Search again                 n
+# Search again in reverse      N
+# Search backward              ?
+# Search forward               /
 
 # Vim-like pane nav
 bind h select-pane -L
@@ -53,16 +67,16 @@ set-option -g base-index 1
 # See https://github.com/rhinstaller/anaconda/pull/1040
 # This checks if the current tmux version (from tmux -V) >= 2.4, using
 # sort -V to do a version-y comparison (and -r to reverse it)
-if-shell '[ $(printf "$(tmux -V | cut -d" " -f2)\n2.4" | sort -Vr | head -n1) == $(tmux -V | cut -d" " -f2) ]' \
-    'set-option -g remain-on-exit on' \
-    'set-option -g set-remain-on-exit on'
+# if-shell '[ $(printf "$(tmux -V | cut -d" " -f2)\n2.4" | sort -Vr | head -n1) == $(tmux -V | cut -d" " -f2) ]' \
+    # 'set-option -g remain-on-exit on' \
+    # 'set-option -g set-remain-on-exit on'
 
 
 bind -n F3 next
 bind -n F2 previous-window
 
-new-session -d -s anaconda -n shell "zsh" 
-new-window -d -n EECS -c "/run/media/dennisfarmer/Samsung-USB/coursework/c++" "zsh"
+new-session -d -s win10 -n shell "zsh" 
+new-window -d -n EECS -c "/mnt/d/coursework/c++" "zsh"
 
 
 # tmux.conf for the anaconda environment

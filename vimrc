@@ -53,7 +53,8 @@ set autoread
 set mouse=a
 set scrolloff=16
 set cursorline
-set wrap linebreak
+" set wrap linebreak
+set nowrap
 " set wrap! to toggle
 " set nofoldenable "disable folding, normal mode zi to disable
 set background=dark
@@ -80,6 +81,7 @@ set ignorecase
 set hlsearch
 nnoremap <CR> :noh<CR><CR>
 let mapleader="\<Space>"
+set lazyredraw
 
 " -----------------------------------------------
 " Tabs
@@ -93,8 +95,13 @@ set shiftwidth=4
 set shiftround
 
 " ctrl+v <tab> to insert actual \t character
+" set noexpandtab
 set smarttab
 set expandtab
+
+" color column
+" set colorcolumn=80
+" highlight ColorColumn ctermbg=darkgray
 
 " -----------------------------------------------
 "  Splits
@@ -179,12 +186,11 @@ let g:goyo_width = 106
 " -----------------------------------------------
 " LaTeX
 
-let g:lex_flavor='latex'
+let g:tex_flavor='latex'
 " let g:vimtex_view_method='okular'
 let g:vimtex_quickfix_mode=0
 let conceallevel=1
 let g:tex_conceal='abdmg'
-
 
 
 " -----------------------------------------------

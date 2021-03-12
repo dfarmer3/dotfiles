@@ -62,9 +62,10 @@ alias cdwin='cd /mnt/c/Users/denni'
 # Washtenaw Community College USB Drive Shortcuts
 alias wcc='cd /mnt/c/Users/denni/Downloads/coursework'
 alias cps='cd /mnt/c/Users/denni/Downloads/coursework/cps272'
+alias mp="cd /mnt/c/Users/denni/Downloads/coursework/cps272/00\ -\ Machine\ Problems"
 alias phy='cd /mnt/c/Users/denni/Downloads/coursework/phy111'
 alias mth='cd /mnt/c/Users/denni/Downloads/coursework/mth293'
-alias coverletter="cd /mnt/c/Users/denni/Downloads/coursework/internships/cover\ letter/Awesome-CV/examples"
+alias coverl="cd /mnt/c/Users/denni/Downloads/coursework/internships/cover\ letter/Awesome-CV/examples"
 alias cv="cd /mnt/c/Users/denni/Downloads/coursework/umich_summer_institute/cv"
 
 
@@ -85,6 +86,12 @@ alias dsa='anaconda-navigator'
 # alias renv='conda activate rstudio; HOST=$(hostname); clear;'
 # alias rstudio='conda activate rstudio; HOST=$(hostname); rstudio'
 # alias base='conda activate; HOST=$(hostname); clear'
+
+# Disable Ctrl-S freeze, Ctrl-Q unfreeze
+if [[ -t 0 && $- = *i* ]]
+then 
+    stty -ixon
+fi
 
 # Use Gvim to allow access to clipboard (probs change to neovim later idc)
 if type gvim > /dev/null 2>&1; then
