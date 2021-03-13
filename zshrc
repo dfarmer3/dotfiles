@@ -58,6 +58,7 @@ alias python='python3'
 # alias sshpi='ssh pi@192.168.1.246'
 # alias ods='onedrive --synchronize'
 alias cdwin='cd /mnt/c/Users/denni'
+export git_token="$(cat ~/github/mastertoken.txt)"
 
 # Washtenaw Community College USB Drive Shortcuts
 alias wcc='cd /mnt/c/Users/denni/Downloads/coursework'
@@ -67,7 +68,6 @@ alias phy='cd /mnt/c/Users/denni/Downloads/coursework/phy111'
 alias mth='cd /mnt/c/Users/denni/Downloads/coursework/mth293'
 alias coverl="cd /mnt/c/Users/denni/Downloads/coursework/internships/cover\ letter/Awesome-CV/examples"
 alias cv="cd /mnt/c/Users/denni/Downloads/coursework/umich_summer_institute/cv"
-
 
 # Bindings for obscure stuff
 #alias spotify="flatpak run com.spotify.Client"

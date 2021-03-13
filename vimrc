@@ -68,6 +68,11 @@ set background=dark
 colorscheme gruvbox
 
 " -----------------------------------------------
+"  remove background (allow transparency)
+hi Normal guibg=NONE ctermbg=NONE
+
+
+" -----------------------------------------------
 " Powerline
 
 set rtp+=$HOME/anaconda3/lib/python3.7/site-packages/powerline/bindings/vim/
